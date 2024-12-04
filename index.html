@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Quiz</h1>
+        
+        <!-- Question 1 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">1. Qual é a principal vantagem do React-Bootstrap na integração com o React?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(1, 'A')">A) Permite o uso de componentes do Bootstrap de maneira otimizada</button></li>
+                <li><button onclick="checkAnswer(1, 'B')">B) Não requer instalação de dependências</button></li>
+                <li><button onclick="checkAnswer(1, 'C')">C) É uma biblioteca exclusiva para projetos simples</button></li>
+                <li><button onclick="checkAnswer(1, 'D')">D) Substitui completamente o Bootstrap</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">2. Qual comando é utilizado para instalar o React-Bootstrap?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(2, 'A')">A) npm install bootstrap react-bootstrap</button></li>
+                <li><button onclick="checkAnswer(2, 'B')">B) npm install react-bootstrap</button></li>
+                <li><button onclick="checkAnswer(2, 'C')">C) npm install react-bootstrap bootstrap</button></li>
+                <li><button onclick="checkAnswer(2, 'D')">D) npm install bootstrap</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">3. O que o cabeçalho 'Access-Control-Allow-Origin: *' permite no back-end PHP?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(3, 'A')">A) Permite acesso a recursos da API PHP de qualquer origem</button></li>
+                <li><button onclick="checkAnswer(3, 'B')">B) Bloqueia acessos de origens externas</button></li>
+                <li><button onclick="checkAnswer(3, 'C')">C) Permite apenas acessos de uma origem específica</button></li>
+                <li><button onclick="checkAnswer(3, 'D')">D) Desabilita o CORS</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">4. Qual método HTTP é mais apropriado para enviar dados sensíveis como senhas e e-mails?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(4, 'A')">A) GET</button></li>
+                <li><button onclick="checkAnswer(4, 'B')">B) POST</button></li>
+                <li><button onclick="checkAnswer(4, 'C')">C) PUT</button></li>
+                <li><button onclick="checkAnswer(4, 'D')">D) DELETE</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">5. Qual é a função do Axios no front-end?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(5, 'A')">A) Gerar componentes React</button></li>
+                <li><button onclick="checkAnswer(5, 'B')">B) Estilizar componentes com CSS</button></li>
+                <li><button onclick="checkAnswer(5, 'C')">C) Conectar ao banco de dados</button></li>
+                <li><button onclick="checkAnswer(5, 'D')">D) Enviar requisições HTTP para o back-end</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">6. Qual é a principal característica do React?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(6, 'A')">A) O React é uma linguagem de programação.</button></li>
+                <li><button onclick="checkAnswer(6, 'B')">B) O React é um banco de dados.</button></li>
+                <li><button onclick="checkAnswer(6, 'C')">C) O React é uma ferramenta de design gráfico.</button></li>
+                <li><button onclick="checkAnswer(6, 'D')">D) O React é uma biblioteca de código aberto amplamente utilizada para o desenvolvimento de aplicações front-end baseadas em componentes.</button></li>
+                <li><button onclick="checkAnswer(6, 'E')">E) O React é um sistema operacional.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">7. Quais são as vantagens do Vite em comparação com ferramentas tradicionais?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(7, 'A')">A) O Vite não utiliza módulos ES.</button></li>
+                <li><button onclick="checkAnswer(7, 'B')">B) O Vite é mais lento que o Webpack.</button></li>
+                <li><button onclick="checkAnswer(7, 'C')">C) O Vite não é compatível com frameworks JavaScript modernos.</button></li>
+                <li><button onclick="checkAnswer(7, 'D')">D) O Vite melhora o tempo de inicialização no desenvolvimento ao servir os módulos diretamente para o navegador.</button></li>
+                <li><button onclick="checkAnswer(7, 'E')">E) O Vite exige configuração extensa e inicialização complexa.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">8. O que acontece se o CSS do Bootstrap não for importado corretamente no ReactBootstrap?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(8, 'A')">A) Os componentes não terão comportamentos.</button></li>
+                <li><button onclick="checkAnswer(8, 'B')">B) Os componentes do React-Bootstrap não poderão ser utilizados.</button></li>
+                <li><button onclick="checkAnswer(8, 'C')">C) Caso o Bootstrap não seja importado corretamente, a aplicação não será afetada, mas os estilos não serão aplicados.</button></li>
+                <li><button onclick="checkAnswer(8, 'D')">D) A aplicação será mais lenta.</button></li>
+                <li><button onclick="checkAnswer(8, 'E')">E) A aplicação não funcionará.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">9. Com base nas afirmações abaixo, qual é a alternativa correta?</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(9, 'A')">A) Apenas as afirmações I, II e III estão corretas.</button></li>
+                <li><button onclick="checkAnswer(9, 'B')">B) Apenas as afirmações I, II e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(9, 'C')">C) Apenas as afirmações II e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(9, 'D')">D) Apenas as afirmações I e III estão corretas.</button></li>
+                <li><button onclick="checkAnswer(9, 'E')">E) Todas as afirmações estão corretas.</button></li>
+            </ul>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">10. Com base nas características do Vite, avalie as afirmações abaixo e, em seguida, assinale a alternativa correta.</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(10, 'A')">A) Apenas as afirmações I e III estão corretas.</button></li>
+                <li><button onclick="checkAnswer(10, 'B')">B) Apenas as afirmações I e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(10, 'C')">C) Apenas a afirmação II está correta.</button></li>
+                <li><button onclick="checkAnswer(10, 'D')">D) Apenas as afirmações I, III e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(10, 'E')">E) Todas as afirmações estão corretas.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">11. Um desenvolvedor deseja iniciar um projeto React utilizando o Vite. Para isso, ele deve seguir uma sequência de passos no terminal para criar, configurar e iniciar o ambiente de desenvolvimento. Com base nos passos descritos, ordene corretamente a sequência necessária para a instalação e configuração do React com o Vite:</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(11, 'A')">A) 2 → 3 → 1 → 5 → 4</button></li>
+                <li><button onclick="checkAnswer(11, 'B')">B) 3 → 2 → 5 → 1 → 4</button></li>
+                <li><button onclick="checkAnswer(11, 'C')">C) 2 → 3 → 5 → 1 → 4</button></li>
+                <li><button onclick="checkAnswer(11, 'D')">D) 3 → 5 → 1 → 4 → 2</button></li>
+                <li><button onclick="checkAnswer(11, 'E')">E) 2 → 5 → 3 → 1 → 4</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">12. O React-Bootstrap é uma biblioteca que combina as funcionalidades do React com o design responsivo e os estilos pré-construídos do Bootstrap. Com base nas informações sobre o React-Bootstrap, assinale a alternativa correta:</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(12, 'A')">A) Apenas as afirmações I, II, IV e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(12, 'B')">B) Apenas as afirmações I, II, III e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(12, 'C')">C) Apenas as afirmações I, II e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(12, 'D')">D) Apenas as afirmações II, III e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(12, 'E')">E) Todas as afirmações estão corretas.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">13. Com base nas etapas de instalação e configuração do React-Bootstrap, analise as afirmações abaixo e assinale a alternativa correta:</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(13, 'A')">A) Apenas as afirmações I, II, V e VI estão corretas.</button></li>
+                <li><button onclick="checkAnswer(13, 'B')">B) Apenas as afirmações I, II e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(13, 'C')">C) Apenas as afirmações II, V e VI estão corretas.</button></li>
+                <li><button onclick="checkAnswer(13, 'D')">D) Apenas as afirmações I, III, V e VI estão corretas.</button></li>
+                <li><button onclick="checkAnswer(13, 'E')">E) Apenas as afirmações I, II, IV e V estão corretas.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">14. Analise as afirmações relacionadas ao código fornecido e assinale a alternativa correta:</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(14, 'A')">A) Apenas as afirmações I, II e III estão corretas.</button></li>
+                <li><button onclick="checkAnswer(14, 'B')">B) Apenas as afirmações I, II e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(14, 'C')">C) Apenas as afirmações I, III e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(14, 'D')">D) Apenas as afirmações II, IV e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(14, 'E')">E) Todas as afirmações estão corretas.</button></li>
+            </ul>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">15. Com base nesse cenário, analise as afirmações abaixo e assinale a alternativa correta:</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><button onclick="checkAnswer(15, 'A')">A) Apenas as afirmações I, II e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(15, 'B')">B) Apenas as afirmações II, IV e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(15, 'C')">C) Apenas as afirmações I, III e V estão corretas.</button></li>
+                <li><button onclick="checkAnswer(15, 'D')">D) Apenas as afirmações I, II e IV estão corretas.</button></li>
+                <li><button onclick="checkAnswer(15, 'E')">E) Todas as afirmações estão corretas.</button></li>
+            </ul>
+            
+            </div>
+            <!-- Question 16 -->
+              <div class="mb-6">
+               <h2 class="text-xl font-semibold">16. Com base nesse cenário, analise as afirmações abaixo e assinale a alternativa correta:</h2>
+                    <ul class="list-disc pl-6 mt-2">
+                    <li><button onclick="checkAnswer(16, 'A')">A) Apenas as afirmações I, II e III estão corretas.</button></li>
+                    <li><button onclick="checkAnswer(16, 'B')">B) Apenas as afirmações II, IV e V estão corretas.</button></li>
+                    <li><button onclick="checkAnswer(16, 'C')">C) Apenas as afirmações I, III e IV estão corretas.</button></li>
+                    <li><button onclick="checkAnswer(16, 'D')">D) Apenas as afirmações I, II e V estão corretas.</button></li>
+                    <li><button onclick="checkAnswer(16, 'E')">E) Todas as afirmações estão corretas.</button></li>
+                    </ul>
+                </div>
+        
+                <!-- Question 17 -->
+              <div class="mb-6">
+                  <h2 class="text-xl font-semibold">17. Com base nas informações sobre CORS e cabeçalhos HTTP, analise as afirmações abaixo e assinale a alternativa correta:</h2>
+                  <ul class="list-disc pl-6 mt-2">
+                  <li><button onclick="checkAnswer(17, 'A')">A) Apenas as afirmações I, III e V estão corretas.</button></li>
+                  <li><button onclick="checkAnswer(17, 'B')">B) Apenas as afirmações II, III e IV estão corretas.</button></li>
+                  <li><button onclick="checkAnswer(17, 'C')">C) Apenas as afirmações I, II e V estão corretas.</button></li>
+                  <li><button onclick="checkAnswer(17, 'D')">D) Apenas as afirmações II, IV e V estão corretas.</button></li>
+                  <li><button onclick="checkAnswer(17, 'E')">E) Todas as afirmações estão corretas.</button></li>
+                    </ul>
+                </div>
+        
+                <!-- Result Button -->
+                <div class="mt-6">
+                    <button onclick="showResults()" class="px-4 py-2 bg-green-500 text-white rounded">RESULTADOS</button>
+                </div>
+            </div>
+        
+            <div id="popup" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-4 rounded text-center">
+                    <p id="popup-message"></p>
+                    <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">OK</button>
+                </div>
+            </div>
+        
+            <div id="results-popup" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-4 rounded text-center">
+                    <p id="results-message"></p>
+                    <button onclick="closeResultsPopup()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">OK</button>
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
+        
